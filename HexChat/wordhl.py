@@ -8,7 +8,7 @@ __module_description__ = 'Highlights some words of importance'
 # When you want to notice something, but not really get 'highlighted'
 
 # Case insensitive words
-hlwords = ('hexchat', )
+hlwords = ('https://steamdb.info/app/570/history/', )
 
 # Don't touch
 edited = False
@@ -33,5 +33,5 @@ def print_cb(word, word_eol, event, attr):
 		hexchat.command('gui color 3')
 		return hexchat.EAT_ALL
 
-hexchat.hook_print_attrs('Channel Message', print_cb, 'Channel Message', priority=hexchat.PRI_HIGH)
-hexchat.hook_print_attrs('Channel Action', print_cb, 'Channel Action', priority=hexchat.PRI_HIGH)
+hexchat.hook_print_attrs('Channel Message', print_cb, 'Channel Msg Hilight', priority=hexchat.PRI_HIGH)
+hexchat.hook_print_attrs('Channel Action', print_cb, 'Channel Action Hilight', priority=hexchat.PRI_HIGH)
