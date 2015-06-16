@@ -8,7 +8,7 @@ __module_description__ = 'Highlights some words of importance'
 # When you want to notice something, but not really get 'highlighted'
 
 # Case insensitive words
-hlwords = ('https://steamdb.info/app/570/history/', )
+hlwords = ('PUT STUFF HERE', )
 
 # Don't touch
 edited = False
